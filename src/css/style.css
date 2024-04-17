@@ -33,3 +33,10 @@ h1 {
 		max-width: 768px;
 	}
 }
+
+@media screen and (width >= px) {
+	.content-container {
+		margin: 0 auto;
+		max-width: 768px;
+	}
+}
