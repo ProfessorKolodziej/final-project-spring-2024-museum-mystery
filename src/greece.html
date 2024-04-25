@@ -7,32 +7,47 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Update your description here" />
 	<title>Museum of Greece</title>
+	<link rel="stylesheet" href="css/style.css">
 	<!--
 		This is where you should link your CSS file.
 	-->
 </head>
 
 <body>
-	<main class="greece-museum">
-		<h1>Museum of Greece</h1>
-		<img src="images/Museum_Start_And_Accept copy.svg" alt="svg drawing of a blank museum wall">
-		<button>
-			<a href="index.html">
-				Return to World Map
-			</a>
-		</button>
+	<main>
+		<section class="page greece-museum hidden">
+			<h1>Museum of Greece</h1>
+			<button>
+				<a href="index.html">
+					Return to World Map
+				</a>
+			</button>
+		</section>
 		<!--the entierty of the page is an svg of a museum and each piece of art is also an svg-->
-		<section class="accept-mission"></section>
-		<section class="clue-page"></section>
-		<section class="dark-room"></section>
-		<section class="garden"></section>
-		<section class="loading-dock"></section>
-		<section class="note"></section>
-		<section class="solved"></section>
-		<aside class="backpack-inventory"></aside>
-		<aside class="floor-plan"></aside>
-		<aside class="message-board"></aside>
-		<aside class="notebook"></aside>
+
+		<section class="page accept-mission hidden">
+
+		</section>
+		<section class="page clue-page hidden">
+
+		</section>
+		<section class="page dark-room hidden">
+			<img src="images/c2-bench.svg">
+			<img src="images/c2-bucket.svg">
+			<img src="images/c2-bust.svg">
+			<img src="images/c2-handprints.svg">
+			<img src="images/c2-jacket.svg">
+			<img src="images/c2-slab.svg">
+		</section>
+		<section class="page garden hidden"></section>
+		<section class="page loading-dock hidden"></section>
+		<section class="page note hidden"></section>
+		<section class="page solved hidden"></section>
+		<aside class="page backpack-inventory hidden"></aside>
+		<aside class="page floor-plan hidden"></aside>
+		<aside class="page message-board hidden"></aside>
+		<aside class="page notebook hidden"></aside>
+		<script src="js/scripts.js"></script>
 	</main>
 	<!--
 		This is where you should link your JS file.

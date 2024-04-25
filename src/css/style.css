@@ -1,13 +1,53 @@
-.welcome-page {}
-
-
+/*Greece Museum CSS*/
 .greece-museum {
-	background-image: ;
+	background-image: url(../images/museum-start.svg);
+	display: grid;
+
 }
 
+.accept-mission {
+	background-image: url(../images/museum-start.svg);
+}
+
+.clue-page {
+	background-image: url(../images/clue-page.svg);
+}
+
+.dark-room {
+	background-image: url(../images/clue-page2.svg);
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+}
+
+.hidden {
+	display: none;
+
+}
+
+.page {
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+}
+/*Egypt Museum CSS*/
+.egypt-museum {
+	background-image: url(../images/Construction.svg);
+
+}
+
+/*Rapa Nui Museum CSS*/
+.rapa-nui-museum {
+	background-image: url(../images/Construction.svg);
+	background-size: cover;
+	display: grid;
+	height: 100vh;
 
 
 
+}
 /*
 CSS controls the styling of the page.
 You can write a color in directly, or use variables.
