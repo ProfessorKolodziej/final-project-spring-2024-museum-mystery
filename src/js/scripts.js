@@ -29,8 +29,8 @@ function nextPage() {
 	currentQuestionIndex++;
 
 }
-nextPage();
-nextPage();
-nextPage();
-nextPage();
+//nextPage();
+//nextPage();
+//nextPage();
+//nextPage();
 //add eventListener

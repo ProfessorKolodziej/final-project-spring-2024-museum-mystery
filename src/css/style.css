@@ -1,3 +1,9 @@
+/*Welcome Page*/
+.welcome-page {
+	background-image: url(../images/ADD.svg);
+
+}
+
 /*Greece Museum CSS*/
 .greece-museum {
 	background-image: url(../images/museum-start.svg);
@@ -32,22 +38,7 @@
 
 
 }
-/*Egypt Museum CSS*/
-.egypt-museum {
-	background-image: url(../images/Construction.svg);
 
-}
-
-/*Rapa Nui Museum CSS*/
-.rapa-nui-museum {
-	background-image: url(../images/Construction.svg);
-	background-size: cover;
-	display: grid;
-	height: 100vh;
-
-
-
-}
 /*
 CSS controls the styling of the page.
 You can write a color in directly, or use variables.
