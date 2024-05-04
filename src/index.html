@@ -14,85 +14,25 @@
 	<link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 		rel="stylesheet">
 	<!--font for h1-->
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
 	<!--font for mission message board-->
-
-	<!--link fonts here-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Kode+Mono:wght@400..700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<section class="welcome-page">
-		<h1 class="welcome-text">Welcome to</h1>
-		<h1 class="grecian">Aegis of Art (or Aegis of Hertiage)</h1>
-		<h2 class="welcome-text">An exhibition of Greek art, architecture, and archeology</h2>
-		<p class="welcome-text">Turn your screen to the left</p>
-		<!--svg of device turning to the left-->
-		<!--svg background of glass doors-->
-		<button>
-			Begin exploring!
-			<!--this needs an event listener since everything is on one page-->
+		<h1 class=" text welcome">Welcome to</h1>
+		<h1 class="text grecian">Aegis of Art</h1>
+		<p class="text welcome-3">Turn your screen to the left</p>
+		<img class="device" src="images/device.svg">
+		<button class="explore-button">
+			<a href="greece.html">Begin exploring</a>
 		</button>
 	</section>
-	<main><!--this is where museum begins-->
-		<section class="page greece-museum hidden">
-			<!--background svg of museum start-->
-			<!--maybe make a slideshow of artifacts to go through the artifacts without needing to do the mission-->
-			<!--svgs of starting artifacts with missing one and home button-->
-		</section>
-		<section class="page accept-mission hidden">
-			<!--event listener for clicking on shaded out figure-->
-			<!--insert all the art svgs and home button-->
-		</section>
-		<section class="page clue-page hidden">
-			<!--background svg of 1st clue page-->
-			<!--event listener for clicking on footprints-->
-		</section>
-		<section class="page dark-room hidden">
-			<!--background svg of 2nd clue page (window)-->
-			<!--event listener for clicking on handprints/window-->
-			<img src="images/c2-bench.svg">
-			<img src="images/c2-bucket.svg">
-			<img src="images/c2-bust.svg">
-			<img src="images/c2-handprints.svg">
-			<img src="images/c2-jacket.svg">
-			<img src="images/c2-slab.svg">
-		</section>
-		<section class="page garden hidden">
-			<!--background svg of garden-->
-			<!--event listener for clicking on building on the right-->
-		</section>
-		<section class="page loading-dock hidden">
-			<!---->
-		</section>
-		<section class="page note hidden">
-
-		</section>
-		<section class="page solved hidden">
-			<button>
-				Back to Browsing
-			</button>
-			<button>
-				Learn more about the Caryatid Sisters
-			</button>
-		</section>
-		<aside class="page backpack-inventory hidden">
-			<button>
-				Close
-			</button>
-		</aside>
-		<aside class="page floor-plan hidden">
-			<button>
-				Close
-			</button>
-		</aside>
-		<aside class="page message-board hidden">
-
-		</aside>
-		<aside class="page notebook hidden">
-
-		</aside>
-		<script src="js/scripts.js"></script>
-	</main>
 	<script src="js/scripts.js"></script>
 </body>
 

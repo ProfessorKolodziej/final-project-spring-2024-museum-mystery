@@ -27,10 +27,9 @@ function nextPage() {
 	}
 	pages[currentQuestionIndex].classList.remove('hidden');
 	currentQuestionIndex++;
-
 }
-//nextPage();
-//nextPage();
-//nextPage();
-//nextPage();
-//add eventListener
+nextPage();
+nextPage();
+nextPage();
+
+

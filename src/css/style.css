@@ -1,20 +1,121 @@
 /*Welcome Page*/
 .welcome-page {
-	background-image: url(../images/ADD.svg);
+	background-image: url(../images/glass.svg);
+	display: grid;
+	grid-template-rows: repeat(8, 1fr);
+	align-items: center;
+	justify-content: center;
+	height: 568px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.welcome {
+	font-size: 35px;
+	font-weight: 600;
+	text-transform: lowercase;
+	grid-row: 2 / span 1;
+}
+
+.grecian {
+	font-size: 50px;
+	font-weight: 700;
+	grid-row: 3 / span 1;
+	padding-bottom: 20px;
+}
+
+.device {
+	transform: scale(0.5) rotate(-45deg);
+	grid-row: 5 / span 2;
+}
+
+.welcome-3 {
+	font-size: 20px;
+	margin-bottom: 10px;
+	font-weight: 400;
+	grid-row: 4 / span 1;
+	margin-top: 50px;
 
 }
 
-/*Greece Museum CSS*/
+.text {
+	font-family: 'crimson text';
+	width: 100vw;
+	margin: 0;
+	text-align: center;
+	color: #FFF7EC;
+}
+
+.explore-button {
+	font-family: 'crimson text';
+	font-size: 25px;
+	background-color: #FFF7EC;
+	border-radius: 60px;
+	padding: 15px;
+	cursor: pointer;
+	border: none;
+	text-transform: capitalize;
+	grid-row: 7 / span 1;
+	max-width: fit-content;
+	place-self: center;
+	margin-top: 70px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.explore-button:hover {
+	background-color: #DED6CC;
+}
+.explore-button:active {
+	background-color: #FFFAF4;
+}
+
+/*Museum Exploration- slideshow*/
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.art-show-wrapper {
+	display: grid;
+	grid-template-rows: 1fr 5fr;
+	grid-gap: 10px;
+	overflow: hidden;
+	height: 100vh;
+}
+
+.slides {
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+}
+
+.artsets {
+	flex: 0 0 auto;
+	scroll-snap-align: start;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	min-width: 100vw;
+	object-fit: cover;
+}
+
+.art-3 {
+	transform: scale(1.09);
+}
+
 .greece-museum {
 	background-image: url(../images/museum-start.svg);
-	display: grid;
-
 }
 
+/*Greece Museum*/
 .accept-mission {
 	background-image: url(../images/museum-start.svg);
 }
 
+/*clue page 1 css*/
 .clue-page {
 	background-image: url(../images/clue-page.svg);
 }
@@ -28,15 +129,12 @@
 
 .hidden {
 	display: none;
-
 }
 
 .page {
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
-
-
 }
 
 /*
@@ -69,6 +167,10 @@ h1 {
 	.content-container {
 		margin: 0 auto;
 		max-width: 768px;
+	}
+	.paage {
+		height: 100vh;
+
 	}
 }
 
