@@ -6,16 +6,6 @@
 // - Run npm run test regularly to check autograding
 // - You'll need to link this file to your HTML :)
 // test: console.log("hello!");
-//from function tutorial
-/*const nextPage = document.querySelector('.greece-museum');
-console.log(nextPage);
-nextPage.classList.toggle("greece-museum");
-console.log(nextPage)
-function toggleParagraph() {
-	nextPage.classList.toggle("greece-museum");
-	console.log(nextPage);
-
-}*/
 
 /*from professor*/
 let currentQuestionIndex = 0;
@@ -63,25 +53,3 @@ const note = document.getElementById('noted')
 note.addEventListener('click', function(){
 	nextPage();
 });
-
-//TBM page
-const caryatid = document.getElementById('What')
-caryatid.addEventListener('click', function(){
-	document.getElementById('caryatid').classList.remove('hidden');
-	//nextPage();
-});
-
-
-
-
-
-//const museumPage = document.getElementById('explore-button')
-//museumPage.addEventListener('click', function() {
-	//nextPage();
-//});
-
-//const missingArtifact = document.getElementById('artset-3')
-//missingArtifact.addEventListener('click', function() {
-	//alert('Good eye, spy You ');
-//});
-
