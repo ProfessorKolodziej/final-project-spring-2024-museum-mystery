@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Update your description here" />
+	<title>Aegis of Art</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!--font for h2-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
+	<!--font for h1-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+		rel="stylesheet">
+	<!--font for mission message board-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Kode+Mono:wght@400..700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<main><!--this is where museum begins-->
+		<section class="page greece-museum">
+			<div class="art-show-wrapper">
+				<a href="#set1"></a>
+				<a href="#set2"></a>
+				<a href="#set3"></a>
+				<div class="slides">
+					<img class="artsets art-1" id="artset-1" src="images/artset1.svg"/>
+					<img class="artsets art-2" id="artset-2" src="images/artset2.svg" />
+					<img class="artsets art-3" id="artset-3" src="images/artset3.svg" />
+				</div>
+			</div>
+			<a href="index.html" class="home-button">
+				<img class="home" src="images/homebutton.svg">
+			</a>
+			<div class="mission-message hidden" id="mission-message">
+				Good eye, spy. You noticed the missing artifact. Will you help the museum find who stole it?
+				<button id="accept-button">
+					Accept mission
+				</button>
+				<button id="decline-button">
+					Go back to browsing museum
+				</button>
+			</div>
+		</section>
+		<section class="page clue-page hidden">
+			<img class="tape" id="tape" src="images/tape.svg">
+			<img class="footprints" id="footprints" src="images/footprints.svg">
+			<img class="lightsoff" id="lightsoff" src="images/lightoff.svg">
+			<img class="bust" id="bust" src="images/busts.svg">
+			<img class="missing" id="missing" src="images/shadow.svg">
+			<a href="index.html">
+				<img class="home clue" src="images/homebutton.svg">
+			</a>
+			<img class="backpack" id="backpack" src="images/backpack.svg">
+			<img class="message-board" id="mission-messages" src="images/message-board.svg">
+			<div class="inventory hidden" id="inventory">
+				<img class="menu" id="menu" src="images/inventory-menu.svg">
+				<img class="open-bag" id="open-bag" src="images/inventory.svg">
+				<button class="close-button">
+					Close
+				</button>
+			</div>
+		</section>
+		<section class="page dark-room hidden">
+			<img class="bench" id="bench" src="images/bench.svg">
+			<img class="bust2" id="bust2" src="images/bust2.svg">
+			<img class="drip" id="drip" src="images/bucket.svg">
+			<img class="slab" id="slab" src="images/slab.svg">
+			<img class="hands" id="hands" src="images/handprints.svg">
+			<img class="backpack" id="backpack" src="images/backpack.svg">
+			<img class="message-board" id="mission-messages" src="images/message-board.svg">
+			<div class="inventory hidden" id="inventory">
+				<img class="menu" id="menu" src="images/inventory-menu.svg">
+				<img class="open-bag" id="open-bag" src="images/inventory.svg">
+				<button class="close-button">
+					Close
+				</button>
+			</div>
+			<a href="index.html">
+				<img class="home dark" src="images/homebutton.svg">
+			</a>
+		</section>
+		<section class="page garden hidden">
+			<a href="index.html">
+				<img class="home outside" src="images/homebutton.svg">
+			</a>
+			<img class="lock" id="lock" src="images/lock.svg">
+			<img class="backpack" id="backpack" src="images/backpack.svg">
+			<img class="message-board" id="mission-messages" src="images/message-board.svg">
+			<div class="inventory hidden" id="inventory">
+				<img class="menu" id="menu" src="images/inventory-menu.svg">
+				<img class="open-bag" id="open-bag" src="images/inventory.svg">
+				<button class="close-button">
+					Close
+				</button>
+			</div>
+		</section>
+		<section class="page loading-dock hidden">
+			<a href="index.html">
+				<img class="home" src="images/homebutton.svg">
+			</a>
+			<img class="backpack" id="backpack" src="images/backpack.svg">
+			<img class="message-board" id="mission-messages" src="images/message-board.svg">
+			<div class="inventory hidden" id="inventory">
+				<img class="menu" id="menu" src="images/inventory-menu.svg">
+				<img class="open-bag" id="open-bag" src="images/inventory.svg">
+				<button class="close-button">
+					Close
+				</button>
+			</div>
+			<img class="noted" id="noted" src="images/leftnote.svg">
+		</section>
+		<section class="page note hidden">
+			<img class="backpack notey" id="backpack" src="images/backpack.svg">
+			<img class="message-board notey" id="mission-messages" src="images/message-board.svg">
+			<div class="inventory hidden" id="inventory">
+				<img class="menu" id="menu" src="images/inventory-menu.svg">
+				<img class="open-bag" id="open-bag" src="images/inventory.svg">
+				<button class="close-button">
+					Close
+				</button>
+			</div>
+			<a href="index.html">
+				<img class="home notey" src="images/homebutton.svg">
+			</a>
+			<button class="TBM button" id="TBM">
+				<a href="tbm.html">Who is TBM?</a>
+			</button>
+		</section>
+		<section class="page solved hidden">
+			<a href="index.html">
+				<img class="home" src="images/homebutton.svg">
+			</a>
+			<button class="browse">
+				Back to Browsing
+			</button>
+			<button class="caryatid">
+				Learn more about the Caryatid Sisters
+			</button>
+		</section>
+		<aside class="page backpack-inventory hidden">
+			<button class="closebutton">
+				Close
+			</button>
+		</aside>
+		<aside class="page floor-plan hidden">
+			<button>
+				Close
+			</button>
+		</aside>
+		<aside class="page message-board hidden">
+
+		</aside>
+		<aside class="page notebook hidden">
+
+		</aside>
+	</main>
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>
