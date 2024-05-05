@@ -17,7 +17,7 @@ function toggleParagraph() {
 
 }*/
 
-/*from chatgpt*/
+/*from professor*/
 let currentQuestionIndex = 0;
 const pages = document.querySelectorAll('.page');
 
@@ -28,8 +28,60 @@ function nextPage() {
 	pages[currentQuestionIndex].classList.remove('hidden');
 	currentQuestionIndex++;
 }
-nextPage();
-nextPage();
-nextPage();
+//accept mission page
+const acceptMission = document.getElementById('artset-3')
+acceptMission.addEventListener('click', function(){
+	document.getElementById('mission-message').classList.remove('hidden');
+	nextPage();
+});
 
+const acceptButton = document.getElementById('accept-button')
+acceptButton.addEventListener('click', function() {
+	nextPage();
+});
+
+//clue page 1
+const footPrints = document.getElementById('footprints')
+footPrints.addEventListener('click', function(){
+	nextPage();
+});
+
+//clue page 2
+const handPrints = document.getElementById('hands')
+handPrints.addEventListener('click', function(){
+	nextPage();
+});
+
+//clue page 3
+const loadingDock = document.getElementById('lock')
+loadingDock.addEventListener('click', function(){
+	nextPage();
+});
+
+//clue page 4
+const note = document.getElementById('noted')
+note.addEventListener('click', function(){
+	nextPage();
+});
+
+//TBM page
+const caryatid = document.getElementById('What')
+caryatid.addEventListener('click', function(){
+	document.getElementById('caryatid').classList.remove('hidden');
+	//nextPage();
+});
+
+
+
+
+
+//const museumPage = document.getElementById('explore-button')
+//museumPage.addEventListener('click', function() {
+	//nextPage();
+//});
+
+//const missingArtifact = document.getElementById('artset-3')
+//missingArtifact.addEventListener('click', function() {
+	//alert('Good eye, spy You ');
+//});
 

@@ -47,7 +47,7 @@
 	color: #FFF7EC;
 }
 
-.explore-button {
+.button {
 	font-family: 'crimson text';
 	font-size: 25px;
 	background-color: #FFF7EC;
@@ -64,6 +64,7 @@
 
 a {
 	text-decoration: none;
+	color: black;
 }
 
 .explore-button:hover {
@@ -103,30 +104,140 @@ img {
 }
 
 .art-3 {
-	transform: scale(1.09);
+	transform: scale(1.05);
 }
 
 .greece-museum {
 	background-image: url(../images/museum-start.svg);
-}
-
-/*Greece Museum*/
-.accept-mission {
-	background-image: url(../images/museum-start.svg);
+	position: relative;
 }
 
 /*clue page 1 css*/
 .clue-page {
 	background-image: url(../images/clue-page.svg);
+	position: relative;
 }
 
+.clueset1 {
+	position: absolute;
+	left: 10px;
+	width: 100%;
+}
+
+.bust {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+}
+
+.footprints {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	left: 10px;
+	z-index: +2;
+}
+
+.missing {
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+}
+
+.lightsoff {
+	position: absolute;
+	width: 100%;
+	left: 14px;
+}
+
+.tape {
+	position: absolute;
+	width: 100%;
+	z-index: +1;
+	bottom: 0px;
+}
+
+/*clue page 2 css*/
 .dark-room {
 	background-image: url(../images/clue-page2.svg);
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(4, 1fr);
+	position: relative;
 }
 
+.bench {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+}
+
+.bust2 {
+	position: absolute;
+	width: 100%;
+	bottom: 5px;
+}
+
+.drip {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	z-index: +1;
+}
+
+.slab {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+}
+
+.hands {
+	position: absolute;
+	width: 100%;
+	bottom: 5px;
+	right: -15px;
+	z-index: +2;
+}
+
+/*clue page 3*/
+.garden {
+	background-image: url(../images/Garden.svg);
+	position: relative;
+}
+
+.lock {
+	position: absolute;
+	width: 100%;
+	bottom: 5px;
+	right: -15px;
+	z-index: +1;
+}
+
+/*clue page 4*/
+.loading-dock {
+	background-image: url(../images/loadingdock.svg);
+	position: relative;
+}
+
+.noted {
+	position: absolute;
+	bottom: 10px;
+	right: 60px;
+}
+
+/*clue page 5*/
+.note {
+	background-image: url(../images/note.svg);
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+
+}
+
+.TBM {
+	font-size: 16px;
+	grid-column: 4 / span 1;
+}
+
+
+
+/*extra stuff*/
 .hidden {
 	display: none;
 }
@@ -135,6 +246,59 @@ img {
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+/*home button css*/
+.home {
+	position: absolute;
+	transform: scale(.05);
+	bottom: 25px;
+	right: 250px;
+	width: 100%;
+}
+
+.clue {
+	position: absolute;
+	transform: scale(.05);
+	bottom: 20px;
+	z-index: +3;
+}
+
+.dark {
+	position: absolute;
+	transform: scale(.05);
+	z-index: +3;
+}
+
+.outside {
+	position: absolute;
+	transform: scale(.05);
+	z-index: +3;
+}
+
+/*backpack css*/
+.backpack {
+	position: absolute;
+	transform: scale(.05);
+	bottom: -5px;
+	left: 250px;
+	width: 100%;
+	z-index: +3;
+}
+
+/*message board css*/
+.message-board {
+	position: absolute;
+	transform: scale(.05);
+	bottom: 45px;
+	left: 250px;
+	width: 100%;
+	z-index: +3;
+}
+
+/*tbm page*/
+.tbm-page {
+	
 }
 
 /*
