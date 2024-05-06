@@ -499,6 +499,7 @@
 	.artsets {
 		margin-bottom: 0px;
 	}
+
 	.bust {
 		bottom: 0px;
 	}
@@ -562,15 +563,19 @@
 		bottom: 40px;
 		right: 570px;
 	}
+
 	.clue {
 		bottom: 30px;
 	}
+
 	.dark {
 		bottom: 20px;
 	}
+
 	.outside {
 		bottom: 10px;
 	}
+
 	.brit {
 		bottom: 0px;
 		left: 550px;
