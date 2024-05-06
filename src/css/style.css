@@ -497,93 +497,94 @@
 
 	/*clue page 1 css*/
 	.artsets {
-		margin-bottom: 150px;
+		margin-bottom: 0px;
 	}
-
 	.bust {
-		bottom: 120px;
+		bottom: 0px;
 	}
 
 	.footprints {
-		bottom: 120px;
+		bottom: 0px;
 	}
 
 	.missing {
-		bottom: 120px;
+		bottom: 0px;
 	}
 
 	.lightsoff {
-		left: 0px;
+		left: -5px;
 	}
 
 	.tape {
-		bottom: 120px;
+		bottom: 0px;
 	}
 
 	/*clue page 2 css*/
 	.bench {
-		bottom: 120px;
+		bottom: 0px;
 	}
 
 	.bust2 {
-		bottom: 125px;
+		bottom: 5px;
 	}
 
 	.drip {
-		bottom: 120px;
+		bottom: 0px;
 	}
 
 	.slab {
-		bottom: 120px;
+		bottom: 0px;
 	}
 
 	.hands {
-		bottom: 120px;
+		bottom: 0px;
 	}
 
 	/*clue page 3*/
 	.lock {
-		bottom: 125px;
-		right: 0px;
+		bottom: 5px;
+		right: 7px;
 	}
 
 	/*clue page 4*/
 	.noted {
-		bottom: -3px;
-		right: 68px;
-		height: 834;
+		bottom: 0px;
+		left: 80px;
 	}
 
 	/*extra stuff*/
 	.page {
-		background-size: auto;
+		background-size: cover;
 	}
 
 	/*home button css*/
 	.home {
-		bottom: 140px;
+		bottom: 40px;
 		right: 570px;
 	}
-
 	.clue {
-		bottom: 130px;
-		right: 530px;
+		bottom: 30px;
 	}
-
+	.dark {
+		bottom: 20px;
+	}
+	.outside {
+		bottom: 10px;
+	}
 	.brit {
-		bottom: 120px;
+		bottom: 0px;
 		left: 550px;
 	}
 
 	/*backpack css*/
 	.backpack {
-		bottom: 70px;
+		bottom: -40px;
 		left: 530px;
 	}
 
 	/*message board css*/
 	.message-board {
-		bottom: 190px;
+		bottom: 30px;
 		left: 530px;
 	}
 }
