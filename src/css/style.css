@@ -1,340 +1,593 @@
-/*Welcome Page*/
-.welcome-page {
-	background-image: url(../images/glass.svg);
-	display: grid;
-	grid-template-rows: repeat(8, 1fr);
-	align-items: center;
-	justify-content: center;
-	height: 568px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
+@media screen and (width >=320px) {
 
-.welcome {
-	font-size: 35px;
-	font-weight: 600;
-	text-transform: lowercase;
-	grid-row: 2 / span 1;
-}
-
-.grecian {
-	font-size: 50px;
-	font-weight: 700;
-	grid-row: 3 / span 1;
-	padding-bottom: 20px;
-}
-
-.device {
-	transform: scale(0.5) rotate(-45deg);
-	grid-row: 5 / span 2;
-}
-
-.welcome-3 {
-	font-size: 20px;
-	margin-bottom: 10px;
-	font-weight: 400;
-	grid-row: 4 / span 1;
-	margin-top: 50px;
-
-}
-
-.text {
-	font-family: 'crimson text';
-	width: 100vw;
-	margin: 0;
-	text-align: center;
-	color: #FFF7EC;
-}
-
-.button {
-	font-family: 'crimson text';
-	font-size: 25px;
-	background-color: #FFF7EC;
-	border-radius: 60px;
-	padding: 15px;
-	cursor: pointer;
-	border: none;
-	text-transform: capitalize;
-	grid-row: 7 / span 1;
-	max-width: fit-content;
-	place-self: center;
-	margin-top: 70px;
-}
-
-a {
-	text-decoration: none;
-	color: black;
-}
-
-.explore-button:hover {
-	background-color: #DED6CC;
-}
-.explore-button:active {
-	background-color: #FFFAF4;
-}
-
-/*Museum Exploration- slideshow*/
-img {
-	display: block;
-	max-width: 100%;
-}
-
-.art-show-wrapper {
-	display: grid;
-	grid-template-rows: 1fr 5fr;
-	grid-gap: 10px;
-	overflow: hidden;
-	height: 100vh;
-}
-
-.slides {
-	display: flex;
-	overflow-x: scroll;
-	scroll-snap-type: x mandatory;
-}
-
-.artsets {
-	flex: 0 0 auto;
-	scroll-snap-align: start;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	min-width: 100vw;
-	object-fit: cover;
-}
-
-.art-3 {
-	transform: scale(1.05);
-}
-
-.greece-museum {
-	background-image: url(../images/museum-start.svg);
-	position: relative;
-}
-
-/*clue page 1 css*/
-.clue-page {
-	background-image: url(../images/clue-page.svg);
-	position: relative;
-}
-
-.clueset1 {
-	position: absolute;
-	left: 10px;
-	width: 100%;
-}
-
-.bust {
-	position: absolute;
-	width: 100%;
-	bottom: 0px;
-}
-
-.footprints {
-	position: absolute;
-	width: 100%;
-	bottom: 0px;
-	left: 10px;
-	z-index: +2;
-}
-
-.missing {
-	width: 100%;
-	position: absolute;
-	bottom: 10px;
-}
-
-.lightsoff {
-	position: absolute;
-	width: 100%;
-	left: 14px;
-}
-
-.tape {
-	position: absolute;
-	width: 100%;
-	z-index: +1;
-	bottom: 0px;
-}
-
-/*clue page 2 css*/
-.dark-room {
-	background-image: url(../images/clue-page2.svg);
-	position: relative;
-}
-
-.bench {
-	position: absolute;
-	width: 100%;
-	bottom: 0px;
-}
-
-.bust2 {
-	position: absolute;
-	width: 100%;
-	bottom: 5px;
-}
-
-.drip {
-	position: absolute;
-	width: 100%;
-	bottom: 0px;
-	z-index: +1;
-}
-
-.slab {
-	position: absolute;
-	width: 100%;
-	bottom: 0px;
-}
-
-.hands {
-	position: absolute;
-	width: 100%;
-	bottom: 5px;
-	right: -15px;
-	z-index: +2;
-}
-
-/*clue page 3*/
-.garden {
-	background-image: url(../images/Garden.svg);
-	position: relative;
-}
-
-.lock {
-	position: absolute;
-	width: 100%;
-	bottom: 5px;
-	right: -15px;
-	z-index: +1;
-}
-
-/*clue page 4*/
-.loading-dock {
-	background-image: url(../images/loadingdock.svg);
-	position: relative;
-}
-
-.noted {
-	position: absolute;
-	bottom: 10px;
-	right: 60px;
-}
-
-/*clue page 5*/
-.note {
-	background-image: url(../images/note.svg);
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-
-}
-
-.TBM {
-	font-size: 16px;
-	grid-column: 4 / span 1;
-}
-
-
-
-/*extra stuff*/
-.hidden {
-	display: none;
-}
-
-.page {
-	height: 100vh;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-/*home button css*/
-.home {
-	position: absolute;
-	transform: scale(.05);
-	bottom: 25px;
-	right: 250px;
-	width: 100%;
-}
-
-.clue {
-	position: absolute;
-	transform: scale(.05);
-	bottom: 20px;
-	z-index: +3;
-}
-
-.dark {
-	position: absolute;
-	transform: scale(.05);
-	z-index: +3;
-}
-
-.outside {
-	position: absolute;
-	transform: scale(.05);
-	z-index: +3;
-}
-
-.brit {
-	position: absolute;
-	transform: scale(.05);
-	z-index: +3;
-	bottom: -5px;
-	left: 250px;
-	width: 100%;
-
-}
-
-/*backpack css*/
-.backpack {
-	position: absolute;
-	transform: scale(.05);
-	bottom: -5px;
-	left: 250px;
-	width: 100%;
-	z-index: +3;
-}
-
-/*message board css*/
-.message-board {
-	position: absolute;
-	transform: scale(.05);
-	bottom: 45px;
-	left: 250px;
-	width: 100%;
-	z-index: +3;
-}
-
-/*tbm page*/
-.tbm-page {
-	font-family: 'crimson text';
-	background-color:antiquewhite;
-	h1 {
-		font-size: 40px;
+	/*Welcome Page*/
+	.welcome-page {
+		background-image: url(../images/glass.svg);
+		display: grid;
+		grid-template-rows: repeat(8, 1fr);
+		align-items: center;
+		justify-content: center;
+		height: 568px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 
-	h2 {
+	.welcome {
+		font-size: 35px;
+		font-weight: 600;
+		text-transform: lowercase;
+		grid-row: 2 / span 1;
+	}
+
+	.grecian {
+		font-size: 50px;
+		font-weight: 700;
+		grid-row: 3 / span 1;
+		padding-bottom: 20px;
+	}
+
+	.device {
+		transform: scale(0.5) rotate(-45deg);
+		grid-row: 5 / span 2;
+	}
+
+	.welcome-3 {
 		font-size: 20px;
+		margin-bottom: 10px;
+		font-weight: 400;
+		grid-row: 4 / span 1;
+		margin-top: 50px;
 	}
-	ul {
+
+	.text {
+		font-family: 'crimson text';
+		width: 100vw;
+		margin: 0;
+		text-align: center;
+		color: #FFF7EC;
+	}
+
+	.button {
+		font-family: 'crimson text';
+		font-size: 25px;
+		background-color: #FFF7EC;
+		border-radius: 60px;
+		padding: 15px;
+		cursor: pointer;
+		border: none;
+		text-transform: capitalize;
+		grid-row: 7 / span 1;
+		max-width: fit-content;
+		place-self: center;
+		margin-top: 70px;
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
+
+	.explore-button:hover {
+		background-color: #DED6CC;
+	}
+
+	.explore-button:active {
+		background-color: #FFFAF4;
+	}
+
+	/*Museum Exploration- slideshow*/
+	img {
+		display: block;
+		max-width: 100%;
+	}
+
+	.art-show-wrapper {
+		display: grid;
+		grid-template-rows: 1fr 5fr;
+		grid-gap: 10px;
+		overflow: hidden;
+		height: 100vh;
+	}
+
+	.slides {
+		display: flex;
+		overflow-x: scroll;
+		scroll-snap-type: x mandatory;
+	}
+
+	.artsets {
+		flex: 0 0 auto;
+		scroll-snap-align: start;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		min-width: 100vw;
+		object-fit: cover;
+	}
+
+	.art-3 {
+		transform: scale(1.05);
+	}
+
+	.greece-museum {
+		background-image: url(../images/museum-start.svg);
+		position: relative;
+	}
+
+	/*clue page 1 css*/
+	.clue-page {
+		background-image: url(../images/clue-page.svg);
+		position: relative;
+	}
+
+	.clueset1 {
+		position: absolute;
+		left: 10px;
+		width: 100%;
+	}
+
+	.bust {
+		position: absolute;
+		width: 100%;
+		bottom: 0px;
+	}
+
+	.footprints {
+		position: absolute;
+		width: 100%;
+		bottom: 0px;
+		left: 10px;
+		z-index: +2;
+	}
+
+	.missing {
+		width: 100%;
+		position: absolute;
+		bottom: 10px;
+	}
+
+	.lightsoff {
+		position: absolute;
+		width: 100%;
+		left: 14px;
+	}
+
+	.tape {
+		position: absolute;
+		width: 100%;
+		z-index: +1;
+		bottom: 0px;
+	}
+
+	/*clue page 2 css*/
+	.dark-room {
+		background-image: url(../images/clue-page2.svg);
+		position: relative;
+	}
+
+	.bench {
+		position: absolute;
+		width: 100%;
+		bottom: 0px;
+	}
+
+	.bust2 {
+		position: absolute;
+		width: 100%;
+		bottom: 5px;
+	}
+
+	.drip {
+		position: absolute;
+		width: 100%;
+		bottom: 0px;
+		z-index: +1;
+	}
+
+	.slab {
+		position: absolute;
+		width: 100%;
+		bottom: 0px;
+	}
+
+	.hands {
+		position: absolute;
+		width: 100%;
+		bottom: 5px;
+		right: -15px;
+		z-index: +2;
+	}
+
+	/*clue page 3*/
+	.garden {
+		background-image: url(../images/Garden.svg);
+		position: relative;
+	}
+
+	.lock {
+		position: absolute;
+		width: 100%;
+		bottom: 5px;
+		right: -15px;
+		z-index: +1;
+	}
+
+	/*clue page 4*/
+	.loading-dock {
+		background-image: url(../images/loadingdock.svg);
+		position: relative;
+	}
+
+	.noted {
+		position: absolute;
+		bottom: 10px;
+		right: 60px;
+	}
+
+	/*clue page 5*/
+	.note {
+		background-image: url(../images/note.svg);
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.TBM {
 		font-size: 16px;
-		list-style-type: none;
-		li {
-			margin-bottom: 5px;
+		grid-column: 4 / span 1;
+	}
+
+	/*extra stuff*/
+	.hidden {
+		display: none;
+	}
+
+	.page {
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	/*home button css*/
+	.home {
+		position: absolute;
+		transform: scale(.05);
+		bottom: 25px;
+		right: 250px;
+		width: 100%;
+	}
+
+	.clue {
+		position: absolute;
+		transform: scale(.05);
+		bottom: 20px;
+		z-index: +3;
+	}
+
+	.dark {
+		position: absolute;
+		transform: scale(.05);
+		z-index: +3;
+	}
+
+	.outside {
+		position: absolute;
+		transform: scale(.05);
+		z-index: +3;
+	}
+
+	.brit {
+		position: absolute;
+		transform: scale(.05);
+		z-index: +3;
+		bottom: -5px;
+		left: 250px;
+		width: 100%;
+	}
+
+	/*backpack css*/
+	.backpack {
+		position: absolute;
+		transform: scale(.05);
+		bottom: -5px;
+		left: 250px;
+		width: 100%;
+		z-index: +3;
+	}
+
+	/*message board css*/
+	.message-board {
+		position: absolute;
+		transform: scale(.05);
+		bottom: 45px;
+		left: 250px;
+		width: 100%;
+		z-index: +3;
+	}
+
+	/*tbm page*/
+	.tbm-page {
+		font-family: 'crimson text';
+		background-color: antiquewhite;
+
+		h1 {
+			font-size: 40px;
 		}
-	}
-	p {
-		font-size: 16x;
-	}
-	ol {
-		list-style-type: none;
-		font-size: 16px;
-		li {
-			margin-bottom: 10px;
+
+		h2 {
+			font-size: 20px;
+		}
+
+		ul {
+			font-size: 16px;
+			list-style-type: none;
+
+			li {
+				margin-bottom: 5px;
+			}
+		}
+
+		p {
+			font-size: 16x;
+		}
+
+		ol {
+			list-style-type: none;
+			font-size: 16px;
+
+			li {
+				margin-bottom: 10px;
+			}
 		}
 	}
 }
+
+@media screen and (width >=768px) {
+	.welcome-page {
+		grid-template-rows: repeat(14, 1fr);
+		height: 1194px;
+	}
+
+	.welcome {
+		font-size: 45px;
+		grid-row: 3 / span 1;
+	}
+
+	.grecian {
+		font-size: 80px;
+		grid-row: 4 / span 1;
+	}
+
+	.device {
+		grid-row: 7 / span 2;
+	}
+
+	.welcome-3 {
+		grid-row: 11 / span 1;
+	}
+
+	.button {
+		font-size: 45px;
+		grid-row: 12 / span 1;
+	}
+
+	/*clue page 1 css*/
+	.clueset1 {
+		left: 10px;
+		bottom: 20px;
+	}
+
+	.bust {
+		bottom: 0px;
+	}
+
+	.footprints {
+		bottom: 0px;
+		left: 10px;
+	}
+
+	.missing {
+		bottom: 10px;
+	}
+
+	.lightsoff {
+		left: 14px;
+	}
+
+	.tape {
+		bottom: 0px;
+	}
+
+	/*clue page 2 css*/
+	.bench {
+		bottom: 0px;
+	}
+
+	.bust2 {
+		bottom: 5px;
+	}
+
+	.drip {
+		bottom: 0px;
+	}
+
+	.slab {
+		bottom: 0px;
+	}
+
+	.hands {
+		bottom: 5px;
+		right: -15px;
+	}
+
+	/*clue page 3*/
+	.lock {
+		bottom: 5px;
+		right: -15px;
+	}
+
+	/*clue page 4*/
+	.noted {
+		bottom: 10px;
+		right: 60px;
+	}
+
+	/*extra stuff*/
+	.page {
+		background-size: auto;
+	}
+
+	/*home button css*/
+	.home {
+		bottom: 130px;
+		right: 530px;
+	}
+
+	.clue {
+		bottom: 130px;
+		right: 530px;
+	}
+
+	.brit {
+		bottom: 120px;
+		left: 550px;
+	}
+
+	/*backpack css*/
+	.backpack {
+		bottom: 70px;
+		left: 530px;
+	}
+
+	/*message board css*/
+	.message-board {
+		bottom: 190px;
+		left: 530px;
+	}
+}
+
+@media screen and (width >=1024px) {
+	.welcome-page {
+		background-size: contain;
+		grid-template-rows: repeat(14, 1fr);
+		height: 1194px;
+	}
+
+	.welcome {
+		font-size: 50px;
+		grid-row: 6 / span 1;
+	}
+
+	.grecian {
+		font-size: 90px;
+		grid-row: 7 / span 1;
+	}
+
+	.device {
+		display: none;
+	}
+
+	.welcome-3 {
+		display: none;
+	}
+
+	.button {
+		font-size: 45px;
+		grid-row: 8 / span 1;
+	}
+
+	/*clue page 1 css*/
+	.artsets {
+		margin-bottom: 150px;
+	}
+
+	.bust {
+		bottom: 120px;
+	}
+
+	.footprints {
+		bottom: 120px;
+	}
+
+	.missing {
+		bottom: 120px;
+	}
+
+	.lightsoff {
+		left: 0px;
+	}
+
+	.tape {
+		bottom: 120px;
+	}
+
+	/*clue page 2 css*/
+	.bench {
+		bottom: 120px;
+	}
+
+	.bust2 {
+		bottom: 125px;
+	}
+
+	.drip {
+		bottom: 120px;
+	}
+
+	.slab {
+		bottom: 120px;
+	}
+
+	.hands {
+		bottom: 120px;
+	}
+
+	/*clue page 3*/
+	.lock {
+		bottom: 125px;
+		right: 0px;
+	}
+
+	/*clue page 4*/
+	.noted {
+		bottom: -3px;
+		right: 68px;
+		height: 834;
+	}
+
+	/*extra stuff*/
+	.page {
+		background-size: auto;
+	}
+
+	/*home button css*/
+	.home {
+		bottom: 140px;
+		right: 570px;
+	}
+
+	.clue {
+		bottom: 130px;
+		right: 530px;
+	}
+
+	.brit {
+		bottom: 120px;
+		left: 550px;
+	}
+
+	/*backpack css*/
+	.backpack {
+		bottom: 70px;
+		left: 530px;
+	}
+
+	/*message board css*/
+	.message-board {
+		bottom: 190px;
+		left: 530px;
+	}
+}
+
 
 
 /*
@@ -358,18 +611,4 @@ to help you out.
 		height: 100vh;
 
 	}
-}
-
-@media screen and (width 834px>=px) {
-	.welcome-page {
-		background-image: url(../images/glass.svg);
-		display: grid;
-		grid-template-rows: repeat(14, 1fr);
-		align-items: center;
-		justify-content: center;
-		height: 1194px;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-	}
-} */
+}*/
